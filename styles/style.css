@@ -1,0 +1,367 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+    color: white;
+    box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Fredericka+the+Great|Josefin+Sans:400,600|PT+Sans+Narrow:400,700|Poppins:400,600,900');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    height: 100%;
+    text-align: center;
+}
+
+.container--big {
+    max-width: 1000px;
+}
+
+.container--medium {
+    max-width: 600px;
+}
+
+/**header**/
+
+.header {
+    width: 100%;
+    height: 150px;
+    background: #2b2f3a;
+    text-align: center;
+    background-image: url("../images/Backgrounds/2.png");
+}
+
+
+
+.header__logo {
+    font-size: 3rem;
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    font-family: 'Fredericka the Great';
+    letter-spacing: 2px;
+    color: #fdbc2c;
+
+}
+
+.header__nav {}
+
+.nav__list {
+    height: inherit;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.nav__item {
+    font-size: 0.8rem;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-family: 'PT Sans Narrow', sans-serif;
+    letter-spacing: 3px;
+}
+
+.nav__item:hover {
+    background-color: #fdbc2c;
+    cursor: pointer;
+    color: black;
+
+}
+
+.nav__link-selected {
+    color: #FDBC2C;
+}
+
+/**Banner**/
+
+.banner {
+    height: 500px;
+    background: url("../images/Banner/banner-pizza.jpg");
+    background-size: cover;
+    border-top: 2px solid #fdbc2c;
+    border-bottom: 2px solid #fdbc2c;
+}
+
+.banner__block {
+    width: 100%;
+    height: 500px;
+    padding: 80px 0;
+    text-align: center;
+
+}
+
+.banner__block__title {
+    font-size: 4rem;
+    display: block;
+    margin: 20px auto;
+    font-family: 'Fredericka the Great';
+    letter-spacing: 5px;
+}
+
+.banner_block_desc {
+    font-size: 2rem;
+    line-height: 80px;
+    margin: 20px auto;
+    border-bottom: 5px solid #FDBC2C;
+    min-width: 300px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    letter-spacing: 1px;
+}
+
+.button {
+    margin: 20px auto;
+    background: none;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Fredericka the Great';
+}
+
+.button--yellow {
+    border: 3px solid #FDBC2C;
+
+}
+
+.button--red {
+    border: 3px solid #588F21;
+}
+
+.button--green {
+    border: 3px solid #F52E20;
+}
+
+.button--yellow:hover {
+    background: #fdbc2c;
+}
+
+.button--green:hover {
+    background: #588F21;
+}
+
+.button--red:hover {
+    background: #F52E20;
+}
+
+
+/**news**/
+
+.news {
+    width: 100%;
+    height: 700px;
+    background: #2b2f3a;
+       background-image: url("../images/Backgrounds/2.png");
+    border-bottom: 3px solid #fdbc2c;
+}
+
+.news__header {
+    display: block;
+    height: 150px;
+    line-height: 150px;
+    width: 100%;
+    font-size: 4rem;
+    letter-spacing: 5px;
+    color: #f52e20;
+    font-family: 'Fredericka the Great';
+
+}
+
+.news__block {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    padding: 20px;
+}
+
+.news__item{
+    display: grid;
+    grid-template-rows: 80px 200px 50px 100px 50px;
+}
+.news__item__header{
+    font-family: 'Fredericka the Great';
+    font-size: 3rem;
+    height: 60px;
+    line-height: 60px;
+    display: block;
+    color: #fdbc2c;
+}
+.news__item__img{
+    height: 200px;
+    width: auto;
+    margin: 0 auto;
+}
+.news__item__ornament{
+    width: 200px;
+    margin: 0 auto;
+}
+.news__item__ingredients{
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    line-height: 20px;
+    letter-spacing: 2px;
+    padding: 20px;
+}
+.news__item__diet{
+    height: 50px;
+}
+.diet__icon{
+    display: inline-block;
+    margin: 5px;
+    height: 30px;
+    width: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
