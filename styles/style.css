@@ -161,19 +161,24 @@ body {
 
 .header {
     width: 100%;
-    height: 150px;
+    height: 230px;
     background: #2b2f3a;
     text-align: center;
     background-image: url("../images/Backgrounds/2.png");
 }
 
 
-
 .header__logo {
+    margin: 0 auto;
+    height: 100px;
+    padding-top: 20px;
+}
+
+.header__name {
     font-size: 3rem;
     display: block;
-    height: 100px;
-    line-height: 100px;
+    height: 80px;
+    line-height: 80px;
     font-family: 'Fredericka the Great';
     letter-spacing: 2px;
     color: #fdbc2c;
@@ -215,6 +220,9 @@ body {
     background-size: cover;
     border-top: 2px solid #fdbc2c;
     border-bottom: 2px solid #fdbc2c;
+    -moz-box-shadow: inset 0 0 300px #000000;
+    -webkit-box-shadow: inset 0 0 300px #000000;
+    box-shadow: inset 0 0 300px #000000;
 }
 
 .banner__block {
@@ -285,8 +293,11 @@ body {
     width: 100%;
     height: 700px;
     background: #2b2f3a;
-       background-image: url("../images/Backgrounds/2.png");
+    background-image: url("../images/Backgrounds/2.png");
     border-bottom: 3px solid #fdbc2c;
+    -moz-box-shadow: inset 0 0 300px #000000;
+    -webkit-box-shadow: inset 0 0 300px #000000;
+    box-shadow: inset 0 0 300px #000000;
 }
 
 .news__header {
@@ -310,11 +321,12 @@ body {
     padding: 20px;
 }
 
-.news__item{
+.news__item {
     display: grid;
     grid-template-rows: 80px 200px 50px 100px 50px;
 }
-.news__item__header{
+
+.news__item__header {
     font-family: 'Fredericka the Great';
     font-size: 3rem;
     height: 60px;
@@ -322,46 +334,36 @@ body {
     display: block;
     color: #fdbc2c;
 }
-.news__item__img{
+
+.news__item__img {
     height: 200px;
-    width: auto;
-    margin: 0 auto;
-}
-.news__item__ornament{
     width: 200px;
     margin: 0 auto;
 }
-.news__item__ingredients{
+
+.news__item__ornament {
+    width: 200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.news__item__ingredients {
     font-family: 'Poppins', sans-serif;
     font-size: 0.8rem;
     line-height: 20px;
     letter-spacing: 2px;
     padding: 20px;
+    border-left: 2px solid #fdbc2c;
+    border-right: 2px solid #fdbc2c;
 }
-.news__item__diet{
+
+.news__item__diet {
     height: 50px;
 }
-.diet__icon{
+
+.diet__icon {
     display: inline-block;
     margin: 5px;
     height: 30px;
     width: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
