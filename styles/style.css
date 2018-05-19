@@ -86,11 +86,23 @@ video {
     font: inherit;
     vertical-align: baseline;
     text-decoration: none;
-    color: white;
     box-sizing: border-box;
 }
 
 /* HTML5 display-role reset for older browsers */
+
+button,
+input[type="submit"],
+input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    border: none;
+}
 
 article,
 aside,
@@ -115,19 +127,12 @@ ul {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Fredericka+the+Great|Josefin+Sans:400,600|PT+Sans+Narrow:400,700|Poppins:400,600,900');
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -141,229 +146,165 @@ ul {
 body {
     font-size: 16px;
     box-sizing: border-box;
+    background: #f0f0f0;
 }
 
-.container {
-    margin: 0 auto;
-    height: 100%;
-    text-align: center;
-}
 
-.container--big {
-    max-width: 1000px;
-}
+/* MAIN-HEADER */
 
-.container--medium {
-    max-width: 600px;
-}
-
-/**header**/
-
-.header {
+.header--main {
     width: 100%;
-    height: 230px;
-    background: #2b2f3a;
-    text-align: center;
-    background-image: url("../images/Backgrounds/2.png");
+    height: 110vh;
+    padding: 40px;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
 }
 
+.header__nav {
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: white;
+    letter-spacing: 3px;
+    height: 200px;
+}
+
+.header__nav__element {
+    color: white;
+    line-height: 3em;
+}
 
 .header__logo {
-    margin: 0 auto;
-    height: 100px;
-    padding-top: 20px;
-}
-
-.header__name {
-    font-size: 3rem;
     display: block;
-    height: 80px;
-    line-height: 80px;
-    font-family: 'Fredericka the Great';
-    letter-spacing: 2px;
-    color: #fdbc2c;
+    font-size: 3em;
+    font-family: 'Leckerli One', cursive;
+    float: left;
 
 }
 
-.header__nav {}
-
-.nav__list {
-    height: inherit;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
+.float--right {
+    float: right;
 }
 
-.nav__item {
-    font-size: 0.8rem;
-    line-height: 50px;
-    text-transform: uppercase;
-    font-family: 'PT Sans Narrow', sans-serif;
-    letter-spacing: 3px;
-}
-
-.nav__item:hover {
-    background-color: #fdbc2c;
-    cursor: pointer;
-    color: black;
-
-}
-
-.nav__link-selected {
-    color: #FDBC2C;
-}
-
-/**Banner**/
-
-.banner {
-    height: 500px;
-    background: url("../images/Banner/banner-pizza.jpg");
-    background-size: cover;
-    border-top: 2px solid #fdbc2c;
-    border-bottom: 2px solid #fdbc2c;
-    -moz-box-shadow: inset 0 0 300px #000000;
-    -webkit-box-shadow: inset 0 0 300px #000000;
-    box-shadow: inset 0 0 300px #000000;
-}
-
-.banner__block {
-    width: 100%;
-    height: 500px;
-    padding: 80px 0;
-    text-align: center;
-
-}
-
-.banner__block__title {
-    font-size: 4rem;
-    display: block;
-    margin: 20px auto;
-    font-family: 'Fredericka the Great';
-    letter-spacing: 5px;
-}
-
-.banner_block_desc {
-    font-size: 2rem;
-    line-height: 80px;
-    margin: 20px auto;
-    border-bottom: 5px solid #FDBC2C;
-    min-width: 300px;
-    font-family: 'PT Sans Narrow', sans-serif;
-    letter-spacing: 1px;
-}
-
-.button {
-    margin: 20px auto;
-    background: none;
+.header__nav__element::after {
     color: white;
-    font-size: 2rem;
-    padding: 10px;
-    cursor: pointer;
-    font-family: 'Fredericka the Great';
-}
+    margin: 0 20px 0 20px;
+    content: " \2022 ";
 
-.button--yellow {
-    border: 3px solid #FDBC2C;
-
-}
-
-.button--red {
-    border: 3px solid #588F21;
-}
-
-.button--green {
-    border: 3px solid #F52E20;
-}
-
-.button--yellow:hover {
-    background: #fdbc2c;
-}
-
-.button--green:hover {
-    background: #588F21;
-}
-
-.button--red:hover {
-    background: #F52E20;
-}
-
-
-/**news**/
-
-.news {
-    width: 100%;
-    height: 700px;
-    background: #2b2f3a;
-    background-image: url("../images/Backgrounds/2.png");
-    border-bottom: 3px solid #fdbc2c;
-    -moz-box-shadow: inset 0 0 300px #000000;
-    -webkit-box-shadow: inset 0 0 300px #000000;
-    box-shadow: inset 0 0 300px #000000;
-}
-
-.news__header {
-    display: block;
-    height: 150px;
-    line-height: 150px;
-    width: 100%;
-    font-size: 4rem;
-    letter-spacing: 5px;
-    color: #f52e20;
-    font-family: 'Fredericka the Great';
-
-}
-
-.news__block {
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 40px;
-    padding: 20px;
-}
-
-.news__item {
-    display: grid;
-    grid-template-rows: 80px 200px 50px 100px 50px;
-}
-
-.news__item__header {
-    font-family: 'Fredericka the Great';
-    font-size: 3rem;
-    height: 60px;
-    line-height: 60px;
-    display: block;
-    color: #fdbc2c;
-}
-
-.news__item__img {
-    height: 200px;
-    width: 200px;
-    margin: 0 auto;
-}
-
-.news__item__ornament {
-    width: 200px;
-    margin: 0 auto;
-    padding: 15px;
-}
-
-.news__item__ingredients {
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.8rem;
-    line-height: 20px;
-    letter-spacing: 2px;
-    padding: 20px;
-    border-left: 2px solid #fdbc2c;
-    border-right: 2px solid #fdbc2c;
-}
-
-.news__item__diet {
-    height: 50px;
-}
-
-.diet__icon {
     display: inline-block;
-    margin: 5px;
-    height: 30px;
-    width: 30px;
+}
+
+
+.header__desc {
+    font-size: 7em;
+    color: white;
+    font-family: 'Leckerli One', cursive;
+    text-align: center;
+    margin-top: 80px;
+
+}
+
+.header__subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    letter-spacing: 5px;
+
+
+}
+
+/* MAIN-RESERVATIONS */
+
+.reservations--main {
+    height: 300px;
+    width: 1000px;
+    display: grid;
+    margin: -50px auto 0 auto;
+
+    grid-template-columns: 300px 700px;
+    background: white;
+    text-align: center;
+}
+
+.reservations__desc__container {
+    height: 300px;
+    width: 300px;
+    padding: 50px;
+}
+
+.reservations__title {
+    font-family: 'Leckerli One', cursive;
+    font-size: 2.5em;
+        color: #665a4b;
+
+}
+
+.reservations__desc {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    line-height: 1.4em;
+    padding: 20px 10px;
+    font-size: 0.9em;
+}
+
+.reservations__button {
+    border: 2px solid #DFD2C2;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 15px 25px;
+    color: #DFD2C2;
+
+}
+
+.reservations__button:hover {
+    background: #DFD2C2;
+    cursor: pointer;
+    color: white;
+}
+
+.reservations__img__container {
+    height: 300px;
+    width: 700px;
+    background-image: url(../images/restaurant.jpg);
+    background-size: cover;
+}
+
+/* MAIN-ABOUT */
+
+.about--main {
+    height: 300px;
+    width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 300px 700px;
+    background: white;
+}
+
+.about__img__container {
+    height: 300px;
+    width: 300px;
+    background-image: url(../images/restaurant.jpg);
+}
+
+.about__desc__container {
+    padding: 50px;
+    text-align: center;
+}
+
+.about__title {
+    font-family: 'Leckerli One', cursive;
+    font-size: 2.5em;
+    color: #665a4b;
+}
+
+.about__desc {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 0.9em;
+
+    line-height: 1.4em;
+    padding: 30px;
+
 }
