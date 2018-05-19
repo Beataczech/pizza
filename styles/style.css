@@ -428,6 +428,7 @@ body {
   border-bottom: 20px solid transparent;  
   border-left: 20px solid white;
 }
+
 .category__box:nth-of-type(4):after {
     position: absolute;
     left: 750px;
@@ -440,7 +441,6 @@ body {
   border-bottom: 20px solid transparent;  
   border-left: 20px solid white;
 }
-
 
 .category__desc__title {
     font-family: 'Leckerli One', cursive;
@@ -464,21 +464,58 @@ body {
 
 }
 
-.specialoffer--main{
-    width: 900px;
-    height: 600px;
-    display: gridl;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 300px 300px;
-    
-    
+
+.banner--specialoffer{
+    height: 500px;
+    background-image: url(../images/Banner/banner-pizza.jpg);
+    background-size: cover;
+    margin-top: -100px;
 }
 
 
+.specialoffer--main{
+    width: 1000px;
+    height: 500px;
+    display: grid;
+    background: white;
+    margin: 0 auto;
+        margin-top: -50px;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px;
+    
+    
+}
+.inner__border{
+    border: 0.5px solid #DFD2C2;
+    width: 80%;
+    height: 80%;
+    margin: 10%;
+
+}
+.inner__border-big{
+    
+}
+.specialoffer__box--topoffer{
+    grid-row: 1/3;
+    grid-column: 1/3;
+    background-image: url(../images/Backgrounds/1.png);
+}
+.topoffer__title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3em;
+    line-height:1.1em;
+    letter-spacing: 5px;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
 
 
-
-
+footer{
+    height: 500px;
+}
 
 
 
